@@ -1,0 +1,50 @@
+// Container
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: $containerMargin;
+    padding: 0 $containerSidePadding;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body & Locked
+body {
+    font-family: $fontMain;
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
