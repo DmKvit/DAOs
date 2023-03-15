@@ -16,7 +16,7 @@ export function burgerMenu() {
     })
     // Вот тут мы ставим брейкпоинт навбара
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 991.98) {
+        if (window.innerWidth > 767.98) {
             menu.classList.remove('active')
             burger.classList.remove('active')
             body.classList.remove('locked')

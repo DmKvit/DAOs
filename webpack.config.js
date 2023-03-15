@@ -53,19 +53,17 @@ module.exports = (env, args) => {
                 },
                 {
                     test: /\.(jpe?g|png|svg|gif|webp)$/i,
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[contenthash].[ext]',
-                        outputPath: 'images'
-                      },
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'img/[name][ext]',
+                    },
                 },
                 {
-                    test: /\.(ttf|woff|woff2|eot|svg)$/i,
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: 'fonts'
-                      },
+                    test: /\.(ttf|woff|woff2|otf|eot|svg)$/i,
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'fonts/[name][ext]',
+                    },
                 }
             ]
         },

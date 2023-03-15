@@ -1,24 +1,34 @@
 // Container & Breakpoints
 @use 'sass:math';
-$containerWidth: 1200 + px;
+$containerWidth: 1080;
 $containerMargin: 0 auto;
-$containerPadding: 0 15 + px;
+$containerPadding: 20;
 $containerSidePadding: $containerPadding / 2;
-$breakpoint1450: 1449.98 + px;
+// $breakpoint1450: 1449.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
-// Colors
-$mainColor: #131418;
-
 // Burger Menu
-$burgerBreakpoint: $breakpoint992;
+$burgerBreakpoint: $breakpoint768;
 $burgerColor: #131418;
 $burgerActiveColor: #fefefe;
 
 // Fonts
-$fontMain: sans-serif;
-$fontSecondary: '';
-$fontSize: px;
-$fontColor: #ffffff;
+$fontMain: 'Metropolis';
+$fontSize: 14px;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightExtraBold: 800;
+
+// Colors
+$mainClr: #232427;
+$mainFontClr: #9998a4;
+$secondFontClr: #5e5c6c;
+$btnClr: #2962ef;
+$bacgroundClr: #ffffff;
+$cardClr: #efeff4;
+$secondCardClr: #fafbfd;
+$trustedClr: #faf9fa;

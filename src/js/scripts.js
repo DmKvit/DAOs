@@ -1,2 +1,2 @@
 // Custom Scripts
-import './main.js';
+import { burgerMenu } from './main.js';
