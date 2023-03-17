@@ -2,6 +2,8 @@
     flex: 1 1 auto;
     background-color: $bacgroundClr;
 }
+
+/*--------------------------------- Payment section ---------------------------------*/
 .payment {
 
     margin-bottom: 110px;
@@ -31,14 +33,13 @@
         &__image {
             position: absolute;
             top: 0;
-            left: 36.75%;
+            right: -490px;
             // left: 397px;
-            width: 100%;
-            height: 100%;
+
 
             img {
-                object-fit: cover;
-                object-position: left;
+                // object-fit: cover;
+                // object-position: left;
             }
         }
 
@@ -161,105 +162,7 @@
     }
 }
 
-.special {
-
-    // .special__container
-
-    &__container {
-    }
-
-    // .special__body
-
-    &__body {
-    }
-
-    // .special__column
-
-    &__column {
-        display: flex;
-        flex-direction: row;
-        flex: 0 1 33.333%;
-        gap: 20px;
-    }
-
-    // .special__item
-
-    &__item {
-        // min-width: 346px;
-        padding: 60px 40px 93px 40px;
-        background: $bacgroundClr;
-        border: 1px solid $cardClr;
-        border-radius: 8px;
-        &:first-child {
-            padding: 0;
-            border: none;
-        }
-    }
-}
-.item-special {
-    // .item-special__title
-
-    &__title {
-        font-weight: $fontWeightBold;
-        font-size: 36px;
-        line-height: 122%;
-        color: $mainClr;
-    }
-
-    // .item-special__text
-
-    &__text {
-        font-size: 14px;
-        line-height: 171%;
-        color: $mainFontClr;
-    }
-}
-.item-special-card {
-
-    padding: 60px 40px 93px 40px;
-    background: $bacgroundClr;
-    border: 1px solid $cardClr;
-    border-radius: 8px;
-
-    // .item-special-card__icon
-
-    &__icon {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        position: relative;
-        height: 77px;
-        width: 77px;
-        border-radius: 50%;
-        background-color: $secondCardClr;
-
-        img {
-            position: absolute;
-            top: 21px;
-            left: 21px;
-        }
-    }
-
-    // .item-special-card__title
-
-    &__title {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 100%;
-        color: $mainClr;
-    }
-
-    // .item-special-card__text
-
-    &__text {
-        font-size: 14px;
-        line-height: 171%;
-        color: $mainFontClr;
-    }
-}
-
-
-
+/*--------------------------------- Special section ---------------------------------*/
 .special {
 
     // .special__container
@@ -282,11 +185,19 @@
         display: flex;
         flex-direction: column;
         flex: 1 1 346px;
+        padding: 60px 40px 93px 40px;
+        background: $bacgroundClr;
+        border: 1px solid $cardClr;
+        border-radius: 8px;
+        &:first-child {
+            padding: 0;
+            border: none;
+        }
     }
 }
 .item-special {
     justify-content: center;
-
+    
     // .item-special__title
 
     &__title {
@@ -305,6 +216,7 @@
     }
 }
 .item-special-card {
+
     padding: 60px 40px 93px 40px;
     background: $bacgroundClr;
     border: 1px solid $cardClr;
@@ -346,47 +258,7 @@
     }
 }
 
-.trust {
-
-    // .trust__container
-
-    &__container {
-    }
-
-    // .trust__body
-
-    &__body {
-        
-    }
-
-    // .trust__title
-
-    &__title {
-        
-    }
-
-    // .trust__item
-
-    &__item {
-        
-
-    }
-}
-.item-trust {
-    
-
-    // .item-trust__icon
-
-    &__icon {
-    }
-
-    // .item-trust__title
-
-    &__title {
-        
-    }
-}
-
+/*--------------------------------- Trust section ---------------------------------*/
 
 .trust {
     background-color: $trustedClr;
@@ -459,7 +331,7 @@
     }
 }
 
-
+/*--------------------------------- Backed section ---------------------------------*/
 .backed {
 
     // .backed__container
