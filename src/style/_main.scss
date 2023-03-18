@@ -436,3 +436,139 @@
         }
     }
 }
+
+/*--------------------------------- Footer section ---------------------------------*/
+.footer {
+    background: $mainClr;
+
+    // .footer__row
+
+    &__row {
+        padding: 97px 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__column
+
+    &__column {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    // .footer__label
+
+    &__label {
+        padding: 0 0 20px 0;
+        font-weight: $fontWeightExtraBold;
+        font-size: 18px;
+        line-height: 100%; /* 18/18 */
+        color: $bacgroundClr;
+    }
+
+    // .footer__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171.428571%; /* 24/14 */
+        color: $bacgroundClr;
+    }
+
+    // .footer__title
+
+    &__title {
+        padding: 0 0 12px 0;
+        font-weight: $fontWeightSemiBold;
+        font-size: 16px;
+        line-height: 100%; /* 16/16 */
+        color: $bacgroundClr;
+    }
+
+    // .footer__subscribe
+
+    &__subscribe {
+        padding: 0 0 10px 0;
+        position: relative;
+        width: 100%;
+    }
+
+    // .footer__socials
+
+    &__socials {
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+        margin: 0 30px 0 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: $secondFontClr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    // .footer__link
+
+    &__link {
+        font-size: 0;
+    }
+}
+.form {
+
+    // .form__label
+
+    &__label {
+        position: relative;
+        display: flex;
+        padding: 0 0 20px 0;
+        font-weight: $fontWeightExtraBold;
+        font-size: 18px;
+        line-height: 100%; /* 18/18 */
+    }
+
+    // .form__input
+
+    &__input {
+        width: 100%;
+        padding: 20px 60px 20px 20px;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    // .form__button
+
+    &__button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 8px;
+        top: 8px;
+        background-color: $btnClr;
+        border-radius: 4px;
+    }
+
+    // .form__text
+
+    &__text {
+        padding: 0 0 34px 0;
+        font-weight: $fontWeightRegular;
+        font-size: 14px;
+        line-height: 171.428571%; /* 24/14 */
+        color: $bacgroundClr;
+    }
+}
