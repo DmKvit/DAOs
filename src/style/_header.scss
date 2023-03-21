@@ -49,6 +49,7 @@
     padding: 20px 0;
 }
 .logo {
+
     a {
         color: #000000;
         font-weight: $fontWeightExtraBold;
@@ -79,24 +80,37 @@
         display: flex;
         align-items: center;
         position: relative;
-        transition: 0.5s color;
+        transition: 1s color;
 
         .svg-link {
             margin-right: 8px;
         }
+
         &:after {
             position: absolute;
             content: '';
             left: 0;
             bottom: -3px;
-            background: #131418;
+            background: $btnClr;
             height: 1px;
             width: 100%;
             transform: scale(0);
             transition: 0.5s transform;
         }
+
+        path {
+            transition: 0.5s all ease;
+        }
+
         &:hover {
-            color: #131418;
+            color: $btnClr;
+            transition: 0.5s all ease;
+
+            path {
+                fill: $btnClr;
+                transition: 0.5s all ease;
+            }
+
             &:after {
                 transform: scale(1);
             }
